@@ -1,0 +1,363 @@
+2023-07-23T08:25:43.810+0100 [INFO]  Terraform version: 1.4.5
+2023-07-23T08:25:43.811+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.18.0
+2023-07-23T08:25:43.811+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.2
+2023-07-23T08:25:43.811+0100 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-07-23T08:25:43.811+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.0
+2023-07-23T08:25:43.811+0100 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-07-23T08:25:43.811+0100 [INFO]  Go runtime version: go1.19.6
+2023-07-23T08:25:43.811+0100 [INFO]  CLI args: []string{"terraform-1.4.5", "apply"}
+2023-07-23T08:25:43.811+0100 [DEBUG] Attempting to open CLI config file: /home/matthew/.terraformrc
+2023-07-23T08:25:43.811+0100 [INFO]  Loading CLI configuration from /home/matthew/.terraformrc
+2023-07-23T08:25:43.811+0100 [INFO]  Loading CLI configuration from /home/matthew/.terraform.d/credentials.tfrc.json
+2023-07-23T08:25:43.811+0100 [DEBUG] checking for credentials in "/home/matthew/.terraform.d/plugins"
+2023-07-23T08:25:43.811+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-07-23T08:25:43.811+0100 [DEBUG] will search for provider plugins in /home/matthew/.terraform.d/plugins
+2023-07-23T08:25:43.812+0100 [DEBUG] ignoring non-existing provider search directory /home/matthew/.local/share/terraform/plugins
+2023-07-23T08:25:43.812+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2023-07-23T08:25:43.812+0100 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2023-07-23T08:25:43.812+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2023-07-23T08:25:43.812+0100 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2023-07-23T08:25:43.812+0100 [INFO]  Checkpoint disabled. Not running.
+2023-07-23T08:25:43.812+0100 [INFO]  CLI command args: []string{"apply"}
+2023-07-23T08:25:43.814+0100 [DEBUG] New state was assigned lineage "1f71674e-30f2-dac4-90f6-ae33a719a384"
+2023-07-23T08:25:43.875+0100 [DEBUG] checking for provisioner in "."
+2023-07-23T08:25:43.875+0100 [DEBUG] checking for provisioner in "/usr/local/bin"
+2023-07-23T08:25:43.875+0100 [DEBUG] checking for provisioner in "/home/matthew/.terraform.d/plugins"
+2023-07-23T08:25:43.876+0100 [INFO]  backend/local: starting Apply operation
+2023-07-23T08:25:43.876+0100 [DEBUG] created provider logger: level=debug
+2023-07-23T08:25:43.876+0100 [INFO]  provider: configuring client automatic mTLS
+2023-07-23T08:25:43.898+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 args=[.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0]
+2023-07-23T08:25:43.898+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405296
+2023-07-23T08:25:43.898+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0
+2023-07-23T08:25:43.903+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: configuring server automatic mTLS: timestamp=2023-07-23T08:25:43.903+0100
+2023-07-23T08:25:43.925+0100 [DEBUG] provider: using plugin: version=5
+2023-07-23T08:25:43.925+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: plugin address: address=/tmp/plugin3310198129 network=unix timestamp=2023-07-23T08:25:43.925+0100
+2023-07-23T08:25:43.957+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-07-23T08:25:43.959+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405296
+2023-07-23T08:25:43.959+0100 [DEBUG] provider: plugin exited
+2023-07-23T08:25:43.959+0100 [DEBUG] Building and walking validate graph
+2023-07-23T08:25:43.959+0100 [DEBUG] ProviderTransformer: "data.okta_group.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:43.959+0100 [DEBUG] ProviderTransformer: "okta_app_saml.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:43.959+0100 [DEBUG] ProviderTransformer: "okta_group.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:43.959+0100 [DEBUG] ProviderTransformer: "okta_app_group_assignment.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:43.959+0100 [DEBUG] ReferenceTransformer: "okta_app_saml.example" references: []
+2023-07-23T08:25:43.959+0100 [DEBUG] ReferenceTransformer: "okta_group.example" references: []
+2023-07-23T08:25:43.959+0100 [DEBUG] ReferenceTransformer: "okta_app_group_assignment.example" references: [okta_app_saml.example data.okta_group.example]
+2023-07-23T08:25:43.959+0100 [DEBUG] ReferenceTransformer: "data.okta_group.example" references: [okta_group.example]
+2023-07-23T08:25:43.959+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/okta/okta\"]" references: []
+2023-07-23T08:25:43.959+0100 [DEBUG] Starting graph walk: walkValidate
+2023-07-23T08:25:43.960+0100 [DEBUG] created provider logger: level=debug
+2023-07-23T08:25:43.960+0100 [INFO]  provider: configuring client automatic mTLS
+2023-07-23T08:25:43.968+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 args=[.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0]
+2023-07-23T08:25:43.968+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405311
+2023-07-23T08:25:43.968+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0
+2023-07-23T08:25:43.973+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: configuring server automatic mTLS: timestamp=2023-07-23T08:25:43.973+0100
+2023-07-23T08:25:43.997+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: plugin address: address=/tmp/plugin3407588200 network=unix timestamp=2023-07-23T08:25:43.997+0100
+2023-07-23T08:25:43.997+0100 [DEBUG] provider: using plugin: version=5
+2023-07-23T08:25:44.029+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-07-23T08:25:44.031+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405311
+2023-07-23T08:25:44.031+0100 [DEBUG] provider: plugin exited
+2023-07-23T08:25:44.031+0100 [INFO]  backend/local: apply calling Plan
+2023-07-23T08:25:44.031+0100 [DEBUG] Building and walking plan graph for NormalMode
+2023-07-23T08:25:44.031+0100 [DEBUG] ProviderTransformer: "okta_app_group_assignment.example (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:44.031+0100 [DEBUG] ProviderTransformer: "data.okta_group.example (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:44.031+0100 [DEBUG] ProviderTransformer: "okta_app_saml.example (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:44.031+0100 [DEBUG] ProviderTransformer: "okta_group.example (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/okta/okta"]
+2023-07-23T08:25:44.031+0100 [DEBUG] ReferenceTransformer: "okta_app_saml.example (expand)" references: []
+2023-07-23T08:25:44.031+0100 [DEBUG] ReferenceTransformer: "okta_group.example (expand)" references: []
+2023-07-23T08:25:44.031+0100 [DEBUG] ReferenceTransformer: "okta_app_group_assignment.example (expand)" references: [okta_app_saml.example (expand) data.okta_group.example (expand)]
+2023-07-23T08:25:44.032+0100 [DEBUG] ReferenceTransformer: "data.okta_group.example (expand)" references: [okta_group.example (expand)]
+2023-07-23T08:25:44.032+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/okta/okta\"]" references: []
+2023-07-23T08:25:44.032+0100 [DEBUG] Starting graph walk: walkPlan
+2023-07-23T08:25:44.032+0100 [DEBUG] created provider logger: level=debug
+2023-07-23T08:25:44.032+0100 [INFO]  provider: configuring client automatic mTLS
+2023-07-23T08:25:44.041+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 args=[.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0]
+2023-07-23T08:25:44.041+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405324
+2023-07-23T08:25:44.041+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0
+2023-07-23T08:25:44.047+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: configuring server automatic mTLS: timestamp=2023-07-23T08:25:44.047+0100
+2023-07-23T08:25:44.072+0100 [DEBUG] provider: using plugin: version=5
+2023-07-23T08:25:44.072+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: plugin address: address=/tmp/plugin2979211664 network=unix timestamp=2023-07-23T08:25:44.072+0100
+2023-07-23T08:25:44.100+0100 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/okta/okta\"]" changed the config value, but that value is unused
+2023-07-23T08:25:44.100+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [INFO] Initializing Okta client: timestamp=2023-07-23T08:25:44.100+0100
+2023-07-23T08:25:44.100+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [INFO]  running with backoff http client, wait min 30000000000, wait max 300000000000, retry max 5
+2023-07-23T08:25:44.101+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [DEBUG] performing request: method=GET url=https://dev-92849842.okta.com/api/v1/users/me
+2023-07-23T08:25:44.101+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [DEBUG] Okta API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/users/me HTTP/1.1
+Host: dev-92849842.okta.com
+User-Agent: okta-sdk-golang/2.17.0 golang/go1.20.3 linux/amd64 okta-terraform/3.46.0
+Accept: application/json
+Authorization: SSWS 008uUTldMP-YHXUMwJyGp3JyUuHjg_0zQLIHzsALML
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-07-23T08:25:44.101+0100
+2023-07-23T08:25:44.841+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [DEBUG] Okta API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Cache-Control: no-cache, no-store
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: application/json
+Date: Sun, 23 Jul 2023 07:25:44 GMT
+Expires: 0
+P3p: CP="HONK"
+Pragma: no-cache
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.com/r/default/hpkp/reportOnly"
+Server: nginx
+Set-Cookie: sid="";Version=1;Path=/;Max-Age=0;Expires=Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: autolaunch_triggered=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Set-Cookie: JSESSIONID=0017F5E9FC5F4137765BF1BDE3CE1383; Path=/; Secure; HttpOnly
+Strict-Transport-Security: max-age=315360000; includeSubDomains
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Okta-Request-Id: ZLzV-EBqNNrZi-EwX-8WRQAAA5Q
+X-Rate-Limit-Limit: 50
+X-Rate-Limit-Remaining: 48
+X-Rate-Limit-Reset: 1690097159
+X-Xss-Protection: 0
+
+{
+ "id": "00u6ezkmhweitZ8yb5d7",
+ "status": "ACTIVE",
+ "created": "2022-09-07T04:10:27.000Z",
+ "activated": null,
+ "statusChanged": "2022-09-07T04:56:29.000Z",
+ "lastLogin": "2023-07-23T07:15:04.000Z",
+ "lastUpdated": "2022-09-07T04:56:29.000Z",
+ "passwordChanged": "2022-09-07T04:56:29.000Z",
+ "type": {
+  "id": "oty6ezkmd6J4rmhFv5d7"
+ },
+ "profile": {
+  "firstName": "Matt",
+  "lastName": "John",
+  "mobilePhone": null,
+  "secondEmail": null,
+  "login": "oktadev@colamail.co.uk",
+  "email": "oktadev@colamail.co.uk"
+ },
+ "credentials": {
+  "password": {},
+  "emails": [
+   {
+    "value": "oktadev@colamail.co.uk",
+    "status": "VERIFIED",
+    "type": "PRIMARY"
+   }
+  ],
+  "provider": {
+   "type": "OKTA",
+   "name": "OKTA"
+  }
+ },
+ "_links": {
+  "suspend": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/lifecycle/suspend",
+   "method": "POST"
+  },
+  "schema": {
+   "href": "https://dev-92849842.okta.com/api/v1/meta/schemas/user/osc6ezkmd6J4rmhFv5d7"
+  },
+  "resetPassword": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/lifecycle/reset_password",
+   "method": "POST"
+  },
+  "forgotPassword": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/credentials/forgot_password",
+   "method": "POST"
+  },
+  "expirePassword": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/lifecycle/expire_password",
+   "method": "POST"
+  },
+  "changeRecoveryQuestion": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/credentials/change_recovery_question",
+   "method": "POST"
+  },
+  "self": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7"
+  },
+  "resetFactors": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/lifecycle/reset_factors",
+   "method": "POST"
+  },
+  "type": {
+   "href": "https://dev-92849842.okta.com/api/v1/meta/types/user/oty6ezkmd6J4rmhFv5d7"
+  },
+  "changePassword": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/credentials/change_password",
+   "method": "POST"
+  },
+  "deactivate": {
+   "href": "https://dev-92849842.okta.com/api/v1/users/00u6ezkmhweitZ8yb5d7/lifecycle/deactivate",
+   "method": "POST"
+  }
+ }
+}
+-----------------------------------------------------: timestamp=2023-07-23T08:25:44.841+0100
+2023-07-23T08:25:44.842+0100 [DEBUG] provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [DEBUG] performing request: method=GET url=https://dev-92849842.okta.com/.well-known/okta-organization
+2023-07-23T08:25:44.842+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:44 [DEBUG] Okta API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /.well-known/okta-organization HTTP/1.1
+Host: dev-92849842.okta.com
+User-Agent: okta-sdk-golang/2.17.0 golang/go1.20.3 linux/amd64 okta-terraform/3.46.0
+Accept: application/json
+Authorization: SSWS 008uUTldMP-YHXUMwJyGp3JyUuHjg_0zQLIHzsALML
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-07-23T08:25:44.842+0100
+2023-07-23T08:25:45.021+0100 [INFO]  provider.terraform-provider-okta_v3.46.0: 2023/07/23 08:25:45 [DEBUG] Okta API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Connection: close
+Cache-Control: no-cache, no-store
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: application/json
+Date: Sun, 23 Jul 2023 07:25:44 GMT
+Expires: 0
+P3p: CP="HONK"
+Pragma: no-cache
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.com/r/default/hpkp/reportOnly"
+Server: nginx
+Strict-Transport-Security: max-age=315360000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Okta-Request-Id: ZLzV-CwmASDAqSuG46DAMQAAAI4
+X-Xss-Protection: 0
+
+{
+ "id": "00o6ezkmcaPC2dVzQ5d7",
+ "cell": "ok12",
+ "_links": {
+  "organization": {
+   "href": "https://dev-92849842.okta.com"
+  }
+ },
+ "pipeline": "idx",
+ "settings": {
+  "analyticsCollectionEnabled": true,
+  "bugReportingEnabled": true,
+  "omEnabled": false,
+  "pssoEnabled": false
+ }
+}
+-----------------------------------------------------: timestamp=2023-07-23T08:25:45.021+0100
+2023-07-23T08:25:45.023+0100 [DEBUG] Resource instance state not found for node "okta_app_saml.example", instance okta_app_saml.example
+2023-07-23T08:25:45.023+0100 [DEBUG] ReferenceTransformer: "okta_app_saml.example" references: []
+2023-07-23T08:25:45.024+0100 [DEBUG] Resource instance state not found for node "okta_group.example", instance okta_group.example
+2023-07-23T08:25:45.024+0100 [DEBUG] ReferenceTransformer: "okta_group.example" references: []
+2023-07-23T08:25:45.024+0100 [DEBUG] refresh: okta_app_saml.example: no state, so not refreshing
+2023-07-23T08:25:45.024+0100 [DEBUG] refresh: okta_group.example: no state, so not refreshing
+2023-07-23T08:25:45.030+0100 [WARN]  Provider "registry.terraform.io/okta/okta" produced an invalid plan for okta_group.example, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .skip_users: planned value cty.False for a non-computed attribute
+2023-07-23T08:25:45.031+0100 [DEBUG] Resource instance state not found for node "data.okta_group.example", instance data.okta_group.example
+2023-07-23T08:25:45.031+0100 [INFO]  ReferenceTransformer: reference not found: "okta_group.example"
+2023-07-23T08:25:45.031+0100 [DEBUG] ReferenceTransformer: "data.okta_group.example" references: []
+2023-07-23T08:25:45.042+0100 [WARN]  Provider "registry.terraform.io/okta/okta" produced an invalid plan for okta_app_saml.example, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_name_template_type: planned value cty.StringVal("BUILT_IN") for a non-computed attribute
+      - .accessibility_self_service: planned value cty.False for a non-computed attribute
+      - .skip_groups: planned value cty.False for a non-computed attribute
+      - .status: planned value cty.StringVal("ACTIVE") for a non-computed attribute
+      - .user_name_template: planned value cty.StringVal("${source.login}") for a non-computed attribute
+      - .saml_version: planned value cty.StringVal("2.0") for a non-computed attribute
+      - .hide_web: planned value cty.False for a non-computed attribute
+      - .skip_users: planned value cty.False for a non-computed attribute
+      - .hide_ios: planned value cty.False for a non-computed attribute
+      - .auto_submit_toolbar: planned value cty.False for a non-computed attribute
+      - .saml_signed_request_enabled: planned value cty.False for a non-computed attribute
+      - .attribute_statements[0].namespace: planned value cty.StringVal("urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified") for a non-computed attribute
+2023-07-23T08:25:45.045+0100 [DEBUG] Resource instance state not found for node "okta_app_group_assignment.example", instance okta_app_group_assignment.example
+2023-07-23T08:25:45.045+0100 [DEBUG] ReferenceTransformer: "okta_app_group_assignment.example" references: []
+2023-07-23T08:25:45.046+0100 [DEBUG] refresh: okta_app_group_assignment.example: no state, so not refreshing
+2023-07-23T08:25:45.050+0100 [ERROR] provider.terraform-provider-okta_v3.46.0: Response contains error diagnostic: @module=sdk.proto diagnostic_attribute=AttributeName("group_id") diagnostic_summary="Missing required argument" tf_rpc=ValidateResourceTypeConfig tf_provider_addr=provider tf_req_id=d5ee4386-0471-ea9f-b5d7-3bea99b206ff @caller=github.com/hashicorp/terraform-plugin-go@v0.14.3/tfprotov5/internal/diag/diagnostics.go:55 tf_proto_version=5.3 tf_resource_type=okta_app_group_assignment diagnostic_detail="The argument "group_id" is required, but no definition was found." diagnostic_severity=ERROR timestamp=2023-07-23T08:25:45.049+0100
+2023-07-23T08:25:45.050+0100 [ERROR] vertex "okta_app_group_assignment.example" error: Missing required argument
+2023-07-23T08:25:45.050+0100 [ERROR] vertex "okta_app_group_assignment.example (expand)" error: Missing required argument
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+ <= read (data resources)
+
+Terraform planned the following actions, but then encountered a problem:
+
+  # data.okta_group.example will be read during apply
+  # (depends on a resource or a module with changes pending)
+ <= data "okta_group" "example" {
+      + description = (known after apply)
+      + name        = "tf-example"
+      + users       = (known after apply)
+    }
+
+  # okta_app_saml.example will be created
+  + resource "okta_app_saml" "example" {
+      + accessibility_self_service  = false
+      + audience                    = "https://example.com/audience"
+      + authn_context_class_ref     = "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport"
+      + auto_submit_toolbar         = false
+      + certificate                 = (known after apply)
+      + destination                 = "https://example.com"
+      + digest_algorithm            = "SHA256"
+      + embed_url                   = (known after apply)
+      + entity_key                  = (known after apply)
+      + entity_url                  = (known after apply)
+      + features                    = (known after apply)
+      + hide_ios                    = false
+      + hide_web                    = false
+      + honor_force_authn           = false
+      + http_post_binding           = (known after apply)
+      + http_redirect_binding       = (known after apply)
+      + id                          = (known after apply)
+      + key_id                      = (known after apply)
+      + keys                        = (known after apply)
+      + label                       = "tf-example"
+      + logo_url                    = (known after apply)
+      + metadata                    = (known after apply)
+      + metadata_url                = (known after apply)
+      + name                        = (known after apply)
+      + recipient                   = "https://example.com"
+      + response_signed             = true
+      + saml_signed_request_enabled = false
+      + saml_version                = "2.0"
+      + sign_on_mode                = (known after apply)
+      + signature_algorithm         = "RSA_SHA256"
+      + skip_groups                 = false
+      + skip_users                  = false
+      + sso_url                     = "https://example.com"
+      + status                      = "ACTIVE"
+      + subject_name_id_format      = "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      + subject_name_id_template    = "${user.userName}"
+      + user_name_template          = "${source.login}"
+      + user_name_template_type     = "BUILT_IN"
+
+      + attribute_statements {
+          + filter_type  = "REGEX"
+          + filter_value = ".*"
+          + name         = "groups"
+          + namespace    = "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+          + type         = "GROUP"
+        }
+    }
+
+  # okta_group.example will be created
+  + resource "okta_group" "example" {
+      + description = "My Example Group"
+      + id          = (known after apply)
+      + name        = "tf-example"
+      + skip_users  = false
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+╷
+│ Error: Missing required argument
+│ 
+│   with okta_app_group_assignment.example,
+│   on main.tf line 35, in resource "okta_app_group_assignment" "example":
+│   35:   group_id = data.okta_group.example.id
+│ 
+│ The argument "group_id" is required, but no definition was found.
+╵
+2023-07-23T08:25:45.070+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-07-23T08:25:45.075+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/okta/okta/3.46.0/linux_amd64/terraform-provider-okta_v3.46.0 pid=405324
+2023-07-23T08:25:45.076+0100 [DEBUG] provider: plugin exited
+
